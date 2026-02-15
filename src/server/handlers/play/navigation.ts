@@ -34,9 +34,9 @@ handler.xt(Handle.LeaveGame, (client, score) => {
 });
 
 handler.xt(Handle.JoinIgloo, (client, fakeId) => {
-  if (!client.isEngine2) {
+  /*if (!client.isEngine2) {
     return;
-  }
+  }*/
   // for some reason the ID given is the player + 1000
   // in WF igloo room IDs are playerID + 2000
   const iglooId = fakeId + 1000;
@@ -45,6 +45,7 @@ handler.xt(Handle.JoinIgloo, (client, fakeId) => {
 
 // Joining player igloo
 handler.xt(Handle.JoinIglooNew, (client, playerId, roomType) => {
+  return;
   if (!client.isEngine3) {
     return;
   }

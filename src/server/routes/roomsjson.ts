@@ -169,6 +169,20 @@ export function getRoomsJson(version: Version): string {
       "required_item": null,
       "short_name": "Sports Shop"
     },
+    "211": {
+      "room_id": 211,
+      "room_key": "agentlobbysolo",
+      "name": "Agent Lobby Solo",
+      "display_name": "Agent Lobby Solo",
+      "music_id": 0,
+      "is_member": 0,
+      "path": "agentlobbysolo.swf",
+      "max_users": 80,
+      "jump_enabled": false,
+      "jump_disabled": true,
+      "required_item": null,
+      "short_name": "EPF Only"
+    },
     "212": {
       "room_id": 212,
       "room_key": "agentlobbymulti",

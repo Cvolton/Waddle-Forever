@@ -23,7 +23,7 @@ handler.xml('login', (client, data) => {
     client.socket.end('');
   } else {
     let name = nicknameMatch[1];
-    if (client.isEngine3 && client.serverType === 'World') {
+    if (client.isEngine3 && client.serverType === 'World' && false) {
       // in Engine 3 client, the world actually receives the ID instead of the name
       client.setPenguinFromId(Number(name));
     } else {

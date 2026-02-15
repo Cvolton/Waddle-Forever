@@ -8,9 +8,9 @@ import { findInVersion } from '../../game-data';
 const handler = new Handler();
 
 handler.xt(Handle.JoinServer, async (client) => {
-  if (client.isEngine3) {
+  /*if (client.isEngine3) {
     return;
-  }
+  }*/
   // penguins don't keep the puffle from previous session
   client.unequipPuffle();
   /*
